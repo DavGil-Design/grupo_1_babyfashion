@@ -30,18 +30,48 @@
                 <% } %>
               </article>
           </section>
-          <% for (let i = 0; i < subTitles.length; i++) { %>
-            <section class="<%= subTitles[i] %>">
-              <h2><%= subTitles_title[i] %></h2>
+          <% for (let i = 0; i < subTitle.length; i++) { %>
+            <section class="<%= subTitle[i] %>">
+              <h2><%= subTitle_title[i] %></h2>
               <article>
-                <% for (let i = 0; i < subTitles_title[i].product[i].length; i++) { %>
-                  <div class="products" id="<% product[i] %>"></div>
-                  <img class="products_img" src="/images/jpg/img-disable.jpg" alt="">
-                  <div class="products_description-inner">
-                    <span class="products_description_name">"<% product[i].name %></span>
-                    <span class="products_description_description">Descripción</span>
-                    <span class="products_description_price">Precio</span>
-                  </div>
+                <% for (let i = 0; i < 10; i++) { %>
+                  <% if ( subTitle_title[i] == subTitle_title[0]) {%>
+                    <% if ( trendProduct[i] == null) {%>
+                      <div class="products" id="product"></div>
+                      <img class="products_img" src="/images/jpg/img-disable.jpg" alt="">
+                      <div class="products_description-inner">
+                        <span class="products_description_name">Nombre</span>
+                        <span class="products_description_description">Descripción</span>
+                        <span class="products_description_price">precio</span>
+                      </div>
+                    <% } else {%>
+                      <div class="products" id="<%= trendProduct[i] %>"></div>
+                      <img class="products_img" src="/images/jpg/img-disable.jpg" alt="">
+                      <div class="products_description-inner">
+                        <span class="products_description_name"><%= trendProduct[i].name %></span>
+                        <span class="products_description_description"><%= trendProduct[i].description %></span>
+                        <span class="products_description_price"><%= trendProduct[i].price %></span>
+                      </div>
+                    <% } %>
+                  <% } else {%>
+                    <% if ( trendProduct[i] == null) {%>
+                      <div class="products" id="product"></div>
+                      <img class="products_img" src="/images/jpg/img-disable.jpg" alt="">
+                      <div class="products_description-inner">
+                        <span class="products_description_name">Nombre</span>
+                        <span class="products_description_description">Descripción</span>
+                        <span class="products_description_price">precio</span>
+                      </div>
+                    <% } else {%>
+                      <div class="products" id="<%= suggestedProduct[i] %>"></div>
+                      <img class="products_img" src="/images/jpg/img-disable.jpg" alt="">
+                      <div class="products_description-inner">
+                        <span class="products_description_name"><%= suggestedProduct[i].name %></span>
+                        <span class="products_description_description"><%= suggestedProduct[i].description %></span>
+                        <span class="products_description_price"><%= suggestedProduct[i].price %></span>
+                      </div>
+                    <% } %>
+                  <% } %>
                 <% } %>
               </article>
             </section>
