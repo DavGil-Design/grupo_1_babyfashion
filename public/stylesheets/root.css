@@ -1,0 +1,201 @@
+/*General styles*/
+@import url(/stylesheets/fonts/fonts.css);
+
+:root {    
+  /*------*/
+  /*Colors*/
+  /*------*/
+  --c-primary:              #36767a;
+  --c-primary-var1:         #07565b;
+  --c-primary-var2:         #65a4ab;
+  --c-secondary:            #003a45;
+  --c-tertiary:             #ed3c10;
+  --c-tertiary-var1:        #e95b37;
+  --c-tertiary-var2:        #ec785b;
+  --c-color1:               #c2dde4;
+  --c-color3:               #888;
+  --c-color4:               #666;
+  --c-color5:               #444;
+  --c-color7:               transparent;
+  --c-color8:               #000;
+  --c-color9:               #fff;  
+  --c-opacity:              rgba(0, 0, 0, 0.15);
+  --c-opacity-var1:         rgba(255, 255, 255, 0.15);
+  --c-opacity-var2:         rgba(0, 0, 0, 0.05);
+
+
+  /*------------*/
+  /*social-media*/
+  /*------------*/
+  --c-social-facebook:      #3b5998;
+  --c-social-twitter:       #00aced;
+  --c-social-google:         #dd4b39;
+  --c-social-whatsapp:      #4dc247;
+
+
+  /*------*/
+  /*alerts*/
+  /*------*/
+  --c-info:                 var(--c-primary);
+  --c-warning:              #f9a91f;   /*yellow*/
+  --c-error:                #C00009;   /*red*/
+  --c-success:              #86bc32;   /*green*/
+
+
+  /*----------*/
+  /*typographi*/
+  /*----------*/
+  --f-primary:              Theboldfont, sans-serif;
+  --f-secondary-regualr:    SegoeUI-regular, sans-serif;
+  --f-secondary-semiBold:   SegoeUI-semibold, sans-serif;
+  --f-secondary-bold:       SegoeUI-bold, sans-serif;
+  --f-secondary-italic:     SegoeUI-italic, sans-serif;
+  --c-text:                 var(--c-secondary);
+
+
+  /*---------*/
+  /*Font-size*/
+  /*---------*/
+  --f-size-xxs:             10px;
+  --f-size-xs:              12px;
+  --f-size-sm:              14px;
+  --f-size:                 16px;
+  --f-size-md-xxl:          18px;
+  --f-size-md-xl:           20px;
+  --f-size-md:              24px;
+  --f-size-lg:              28px;
+  --f-size-xlg:             34px;
+  --f-size-xlgx:            40px;
+  --f-size-xxlg:            48px;
+  --f-size-super:           60px;
+  --f-size-ultra:           74px;
+
+
+  /*---------*/
+  /*icon-size*/
+  /*---------*/
+  --f-iconsize-sm:          10px;
+  --f-iconsize:             20px;
+  --f-iconsize-md:          36px;
+  --f-iconsize-lg:          48px;
+  --f-iconsize-xlg:         60px;
+  --f-iconsize-super:       70px;
+}
+
+
+/*--------------*/
+/*general styles*/
+/*--------------*/
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: var(--c-color1);
+  color: var(--c-text);
+  font-size: var(--f-size);
+}
+body {  
+  color: var(--c-text);
+  font-family: var(--f-secondary-regualr);
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+main {
+  padding: 70px 0 40px;
+}
+section > section {
+  padding: 10px;
+}
+h1,
+h2 {
+  margin: 0;
+}
+h1 {
+  font-family: var(--f-primary);
+  font-size: var(--f-size-md);
+}
+h2 {
+  font-family:var(--f-secondary-semiBold);
+  font-size: var(--f-size-md-xl);
+}
+ul, li, a{
+  color: var(--c-text);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+button {  
+  cursor: pointer;
+  border: none;
+  font-size: var(--f-size);
+  transition-property: all;
+  transition-duration: .25s;
+}
+
+
+/*---------*/
+/*scrollbar*/
+/*---------*/
+/*Chrome-safari-opera*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--c-opacity-var2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: var(--c-opacity);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--c-tertiary-var2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--c-tertiary-var1);
+  box-shadow: 0 0 2px 1px var(--c-opacity);
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--c-tertiary);
+}
+/*Mozilla-IE/Edge*/
+html {
+  scrollbar-color: var(--c-tertiary-var2) var(--c-opacity-var2);
+  scrollbar-width: thin;
+}
+
+
+/*-----*/
+/*icons*/
+/*-----*/
+.icon_menu:before {
+  background-image: url(/images/svg/menu.svg);
+  background-repeat: no-repeat;
+}
+.icon_search:before  {
+  background-image: url(/images/svg/search.svg);
+  background-repeat: no-repeat;
+}
+.icon_user:before  {
+  background-image: url(/images/svg/user.svg);
+  background-repeat: no-repeat;
+}
+.icon_shoping-bag:before  {
+  background-image: url(/images/svg/shoping-bag.svg);
+  background-repeat: no-repeat;
+}
+/*.social-icons_1*/
+
+/*-------------------*/
+/*social-media-styles*/
+/*-------------------*/
+.button-google {
+  background-color: var(--c-social-google);
+}
+.button-facebook {
+  background-color: var(--c-social-facebook);
+}

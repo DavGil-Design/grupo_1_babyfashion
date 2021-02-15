@@ -9,8 +9,8 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-// server 3000
-//app.listen(3000, () => console.log("servidor 3000 funcionando"));
+// server 3080
+//app.listen(3080, () => console.log("servidor 3080 funcionando"));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

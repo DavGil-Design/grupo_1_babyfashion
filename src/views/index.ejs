@@ -1,11 +1,52 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+ 
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+</head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <!-- header -->
+    <%- include('./partials/header.ejs') %>
+    <main>
+      <section>
+          <section class="carousel">
+              <img src="/static/img/jpg/disable-xxl.jpg" alt="cover-page">
+          </section>
+          <section class="categories">
+              <h2>Categorías</h2>
+              <article class="categories_inner">
+                <% for (let i = 0; i < categories.length; i++) { %>
+                  <div class="categories_inner_category">
+                    <div>
+                        <a href="/shop"><img class="categories_inner_category_img" src="/images/jpg/disable-category-circle.jpg" alt=""></a>
+                    </div>
+                    <span><a href="/shop"><%= categories[i] %> </a></span>
+                  </div>
+                <% } %>
+              </article>
+          </section>
+          <% for (let i = 0; i < subTitles.length; i++) { %>
+            <section class="<%= subTitles[i] %>">
+              <h2><%= subTitles_title[i] %></h2>
+              <article>
+                <% for (let i = 0; i < subTitles_title[i].product[i].length; i++) { %>
+                  <div class="products" id="<% product[i] %>"></div>
+                  <img class="products_img" src="/images/jpg/img-disable.jpg" alt="">
+                  <div class="products_description-inner">
+                    <span class="products_description_name">"<% product[i].name %></span>
+                    <span class="products_description_description">Descripción</span>
+                    <span class="products_description_price">Precio</span>
+                  </div>
+                <% } %>
+              </article>
+            </section>
+          <% } %>
+      </section>
+  </main>
   </body>
 </html>
