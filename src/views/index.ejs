@@ -15,7 +15,7 @@
     <main>
       <section>
           <section class="carousel">
-              <img src="/static/img/jpg/disable-xxl.jpg" alt="cover-page">
+              <img src="/images/jpg/disable-xxl.jpg" alt="cover-page">
           </section>
           <section class="categories">
               <h2>Categorías</h2>
@@ -37,39 +37,43 @@
                 <% for (let i = 0; i < 10; i++) { %>
                   <% if ( subTitle_title[i] == subTitle_title[0]) {%>
                     <% if ( trendProduct[i] == null) {%>
-                      <div class="products" id="product"></div>
+                    <div class="products" id="product">
                       <img class="products_img" src="/images/jpg/img-disable.jpg" alt="">
                       <div class="products_description-inner">
                         <span class="products_description_name">Nombre</span>
                         <span class="products_description_description">Descripción</span>
                         <span class="products_description_price">precio</span>
                       </div>
+                    </div>
                     <% } else {%>
-                      <div class="products" id="<%= trendProduct[i] %>"></div>
+                    <div class="products" id="<%= trendProduct[i] %>">
                       <img class="products_img" src="/images/jpg/img-disable.jpg" alt="">
                       <div class="products_description-inner">
                         <span class="products_description_name"><%= trendProduct[i].name %></span>
                         <span class="products_description_description"><%= trendProduct[i].description %></span>
                         <span class="products_description_price"><%= trendProduct[i].price %></span>
                       </div>
+                    </div>
                     <% } %>
                   <% } else {%>
                     <% if ( trendProduct[i] == null) {%>
-                      <div class="products" id="product"></div>
+                    <div class="products" id="product">
                       <img class="products_img" src="/images/jpg/img-disable.jpg" alt="">
                       <div class="products_description-inner">
                         <span class="products_description_name">Nombre</span>
                         <span class="products_description_description">Descripción</span>
                         <span class="products_description_price">precio</span>
                       </div>
+                    </div>
                     <% } else {%>
-                      <div class="products" id="<%= suggestedProduct[i] %>"></div>
+                    <div class="products" id="<%= suggestedProduct[i] %>">
                       <img class="products_img" src="/images/jpg/img-disable.jpg" alt="">
                       <div class="products_description-inner">
                         <span class="products_description_name"><%= suggestedProduct[i].name %></span>
                         <span class="products_description_description"><%= suggestedProduct[i].description %></span>
                         <span class="products_description_price"><%= suggestedProduct[i].price %></span>
                       </div>
+                    </div>
                     <% } %>
                   <% } %>
                 <% } %>
