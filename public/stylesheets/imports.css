@@ -1,0 +1,11 @@
+/*Fonts*/
+@import url(/stylesheets/fonts/fonts.css);
+
+/*Root*/
+@import url(/stylesheets/root.css);
+
+/*common resourses/styles*/
+@import url(/stylesheets/partials/_header.css);            /*Header*/
+@import url(/stylesheets/partials/_footer.css);            /*Footer*/
+@import url(/stylesheets/partials/_general-styles.css);    /*General styles*/
+@import url(/stylesheets/partials/_icons.css);             /*Icons*/

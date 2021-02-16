@@ -1,5 +1,13 @@
-/*General styles*/
-@import url(/stylesheets/fonts/fonts.css);
+/*-------------------*/
+/*Root/General-styles*/
+/*-------------------*/
+/*Colors*/
+/*Social-media*/
+/*Alerts*/
+/*Typographi*/
+/*Font-size*/
+/*Icon-size*/
+/*-------------------*/
 
 :root {    
   /*------*/
@@ -25,7 +33,7 @@
 
 
   /*------------*/
-  /*social-media*/
+  /*Social-media*/
   /*------------*/
   --c-social-facebook:      #3b5998;
   --c-social-twitter:       #00aced;
@@ -34,7 +42,7 @@
 
 
   /*------*/
-  /*alerts*/
+  /*Alerts*/
   /*------*/
   --c-info:                 var(--c-primary);
   --c-warning:              #f9a91f;   /*yellow*/
@@ -43,7 +51,7 @@
 
 
   /*----------*/
-  /*typographi*/
+  /*Typographi*/
   /*----------*/
   --f-primary:              Theboldfont, sans-serif;
   --f-secondary-regualr:    SegoeUI-regular, sans-serif;
@@ -72,7 +80,7 @@
 
 
   /*---------*/
-  /*icon-size*/
+  /*Icon-size*/
   /*---------*/
   --f-iconsize-sm:          10px;
   --f-iconsize:             20px;
@@ -80,122 +88,4 @@
   --f-iconsize-lg:          48px;
   --f-iconsize-xlg:         60px;
   --f-iconsize-super:       70px;
-}
-
-
-/*--------------*/
-/*general styles*/
-/*--------------*/
-* {
-  box-sizing: border-box;
-}
-html {
-  background-color: var(--c-color1);
-  color: var(--c-text);
-  font-size: var(--f-size);
-}
-body {  
-  color: var(--c-text);
-  font-family: var(--f-secondary-regualr);
-  line-height: 1.4;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-main {
-  padding: 70px 0 40px;
-}
-section > section {
-  padding: 10px;
-}
-h1,
-h2 {
-  margin: 0;
-}
-h1 {
-  font-family: var(--f-primary);
-  font-size: var(--f-size-md);
-}
-h2 {
-  font-family:var(--f-secondary-semiBold);
-  font-size: var(--f-size-md-xl);
-}
-ul, li, a{
-  color: var(--c-text);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-button {  
-  cursor: pointer;
-  border: none;
-  font-size: var(--f-size);
-  transition-property: all;
-  transition-duration: .25s;
-}
-
-
-/*---------*/
-/*scrollbar*/
-/*---------*/
-/*Chrome-safari-opera*/
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-::-webkit-scrollbar-track {
-  background-color: var(--c-opacity-var2);
-  border-radius: 4px;
-}
-::-webkit-scrollbar-track:hover {
-  background-color: var(--c-opacity);
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--c-tertiary-var2);
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--c-tertiary-var1);
-  box-shadow: 0 0 2px 1px var(--c-opacity);
-}
-::-webkit-scrollbar-thumb:active {
-  background-color: var(--c-tertiary);
-}
-/*Mozilla-IE/Edge*/
-html {
-  scrollbar-color: var(--c-tertiary-var2) var(--c-opacity-var2);
-  scrollbar-width: thin;
-}
-
-
-/*-----*/
-/*icons*/
-/*-----*/
-.icon_menu:before {
-  background-image: url(/images/svg/menu.svg);
-  background-repeat: no-repeat;
-}
-.icon_search:before  {
-  background-image: url(/images/svg/search.svg);
-  background-repeat: no-repeat;
-}
-.icon_user:before  {
-  background-image: url(/images/svg/user.svg);
-  background-repeat: no-repeat;
-}
-.icon_shoping-bag:before  {
-  background-image: url(/images/svg/shoping-bag.svg);
-  background-repeat: no-repeat;
-}
-/*.social-icons_1*/
-
-/*-------------------*/
-/*social-media-styles*/
-/*-------------------*/
-.button-google {
-  background-color: var(--c-social-google);
-}
-.button-facebook {
-  background-color: var(--c-social-facebook);
 }

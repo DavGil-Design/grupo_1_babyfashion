@@ -1,0 +1,20 @@
+/*-----*/
+/*icons*/
+/*-----*/
+.icon_menu:before {
+  background-image: url(/images/svg/menu.svg);
+  background-repeat: no-repeat;
+}
+.icon_search:before  {
+  background-image: url(/images/svg/search.svg);
+  background-repeat: no-repeat;
+}
+.icon_user:before  {
+  background-image: url(/images/svg/user.svg);
+  background-repeat: no-repeat;
+}
+.icon_shoping-bag:before  {
+  background-image: url(/images/svg/shoping-bag.svg);
+  background-repeat: no-repeat;
+}
+  /*.social-icons_1  ||  falta*/

@@ -1,0 +1,44 @@
+/*------*/
+/*footer*/
+/*------*/
+footer {
+    background-color: var(--c-primary-var2);
+    padding: 30px;
+}
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-inner_section {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+}
+.footer-inner_section:last-child {
+    margin-bottom: 0;
+}
+.footer-inner_section_sub-title {
+    font-family: var(--f-secondary-bold);
+}
+
+/*-------*/
+/*@medias*/
+/*-------*/
+@media (min-width: 600px) {
+    .footer-inner_section {
+        flex: 1 1 33%;
+    }
+}
+@media (min-width: 768px) {     /*Tablet*/
+    .categories_inner {
+        justify-content: center;
+    }
+    .categories_inner_category {
+        max-width: 120px;
+    }
+    .products {
+        padding-right: 30px;
+    }
+    .footer-inner_section {
+        padding: 0 5%;
+    }
+}
