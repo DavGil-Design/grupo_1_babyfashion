@@ -8,8 +8,8 @@ la ruta respectiva, las rutas que tenemos actualmente son:
 -/register
 -/login
 -/shop
--/bag-shop
--/product-detail
+-/productCart
+-/productDetail
 
 ## Integrantes del equipo
 
