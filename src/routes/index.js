@@ -36,31 +36,6 @@ router.get('/', function(req, res, next) {
     },
   ];
 
-  // let subTitle_title = [
-  //   'Tendencias' = {
-  //     productSeacrh: function([i]){
-  //       let product = [];
-  //       .find()
-  //     }
-  //   },
-  //   'Sugeridos' = {}
-  // ];
-
-
-  // for (let i = 0; i < product.length; i++) {
-  //     let subTitle_title = [{
-  //     Tendencias: 'product[i]'
-  //   },
-  //   {
-  //     Sugerido:'product[i]'
-  //   }
-      
-  // }
-
-  
-  
-
-
   res.render('index', {
     title: 'BabyFashion',
     categories: categories,
